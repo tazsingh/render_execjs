@@ -6,7 +6,7 @@ Render executable JavaScript within Rails.
 
 Add `render_execjs` to your `Gemfile`
 
-    gem 'render_execjs', '~> 0.0.2'
+    gem 'render_execjs', '~> 0.0.3'
     # gem 'coffee-script' # Uncomment this line if you'd like to render executable CoffeeScript
 
 Run the `render_execjs:install` generator to create the optional configuration initializer file
