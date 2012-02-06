@@ -55,7 +55,7 @@ And two for getting configuration options:
 ## Why would I want to render JavaScript from Rails? ##
 
 Make sure that you're logged into your Twitter, now click on this link: [http://twitter.com/tazsingh](http://twitter.com/tazsingh).
-Notice how it loads your Twitter first, then the page that you've requested?
+Notice how it loads your Twitter profile first, then the page that you've requested?
 
 It has to initialize the JavaScript environment before it can render the page you've requested.
 A solution to this, in Rails, is to use something like Mustache to render the same structure but with different logic;
