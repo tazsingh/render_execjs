@@ -27,9 +27,34 @@ That's it!
 
 Note that it will render whatever is returned from JavaScript.
 
+## Configuration ##
+
+You can configure the following options:
+
+    environment # The environment in which to execute the JavaScript. For example, you can load the Jade templating library into this.
+    coffeescript_environment # Will take CoffeeScript, compile it, and set environment to that
+
+`render_execjs` supports four syntaxes for setting configuration options (using the environment option as an example):
+
+    RenderExecJS.configure do
+      self.environment = "'js environment'"
+      environment "'js environment'"
+    end
+
+    RenderExecJS.environment = "'js environment'"
+    RenderExecJS.environment "'js environment'"
+
+And two for getting configuration options:
+
+    RenderExecJS.configure do
+      self.environment # => will return the environment
+    end
+
+    RenderExecJS.environment # => will also return the environment
+
 ## Why would I want to render JavaScript from Rails? ##
 
-Make sure that you're logged into your Twitter, now click on this link: [http://twitter.com/tazsingh](http://twitter.com/tazsingh)
+Make sure that you're logged into your Twitter, now click on this link: [http://twitter.com/tazsingh](http://twitter.com/tazsingh).
 Notice how it loads your Twitter first, then the page that you've requested?
 
 It has to initialize the JavaScript environment before it can render the page you've requested.
